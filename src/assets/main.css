@@ -1,0 +1,30 @@
+@import "./base.css";
+
+#app {
+}
+
+/* Styling for a custom responsive container */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+/* .container media query for tablet-sized screens */
+@media (min-width: 1024px) {
+  .container {
+    padding-right: 34px;
+    padding-left: 34px;
+  }
+}
+
+/* .container media query for larger screens */
+@media (min-width: 1200px) {
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+    width: 85%;
+  }
+}

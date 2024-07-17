@@ -1,17 +1,20 @@
 <script setup>
-import { RouterLink as Link } from "vue-router";
+import { RouterLink as Link, useRoute } from "vue-router";
 import NavLink from "./NavLink.vue";
 </script>
 
 <template>
   <header>
     <div class="container">
-      <Link id="logo" to="/">Aasandha</Link>
+      <Link id="logo" to="/">
+        <i class="bi bi-plus-circle-dotted"></i>
+        Aasandha
+      </Link>
 
       <ul>
-        <li><NavLink to="/patients" linkText="Patients" /></li>
-        <li><NavLink to="/addresses" linkText="Addresses" /></li>
-        <li><NavLink to="/islands" linkText="Islands" /></li>
+        <li><NavLink to="/patients">Patients</NavLink></li>
+        <li><NavLink to="/addresses">Addresses</NavLink></li>
+        <li><NavLink to="/islands">Islands</NavLink></li>
       </ul>
     </div>
   </header>
@@ -34,6 +37,8 @@ header > div {
   color: var(--color-light);
   font-size: var(--text-md);
   font-weight: 600;
+  display: flex;
+  gap: 0.3rem;
 }
 
 ul {

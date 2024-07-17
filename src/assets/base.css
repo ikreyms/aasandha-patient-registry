@@ -3,15 +3,21 @@
   --color-primary-light: rgb(218, 53, 53);
   --color-primary: rgb(206, 15, 15);
   --color-primary-dark: rgb(155, 12, 12);
+  --color-primary-darker: rgb(126, 11, 11);
 
   --color-light: rgb(255, 246, 246);
+
+  --color-dark: rgb(12, 12, 12);
 }
 
 /* semantic color variables for this project */
 :root {
-  --text-sm: 0.8rem;
+  --text-xs: 0.8rem;
+  --text-sm: 0.9rem;
   --text-base: 1rem;
-  --text-md: 1.5rem;
+  --text-md: 1.3rem;
+  --text-lg: 1.5rem;
+  --text-xl: 2rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,4 +43,19 @@ body {
 
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+a:hover {
+  color: var(--color-primary-light);
+}
+
+h1 {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--color-dark);
 }

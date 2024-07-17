@@ -1,24 +1,16 @@
 <script setup>
-import { ref } from "vue";
-import { RouterLink as Link, useRoute } from "vue-router";
+import { RouterLink as Link } from "vue-router";
 
 defineProps({
   to: {
     type: String,
     default: "#",
   },
-  linkText: {
-    type: String,
-    default: "NavLink",
-  },
 });
-
-const route = useRoute();
-console.log(route.path);
 </script>
 <template>
-  <Link :to="to">
-    {{ linkText }}
+  <Link :to="to" exact-active-class="active">
+    <slot />
   </Link>
 </template>
 
@@ -29,17 +21,18 @@ a {
   font-size: var(--text-base);
   display: block;
   padding-inline: 0.5rem;
-  padding-block: 0.25rem;
+  padding-block: 0.3rem;
+  padding-bottom: 0.4rem;
   border-radius: 0.3rem;
   transition: background-color 0.6s;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 a:hover {
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-primary-darker);
 }
 
 .active {
-  background-color: var(--color-primary-light);
+  background-color: var(--color-primary-dark);
 }
 </style>

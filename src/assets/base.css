@@ -1,9 +1,14 @@
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
-  --color-primary-light: rgb(218, 53, 53);
+  /* --color-primary-light: rgb(218, 53, 53);
   --color-primary: rgb(206, 15, 15);
   --color-primary-dark: rgb(155, 12, 12);
-  --color-primary-darker: rgb(126, 11, 11);
+  --color-primary-darker: rgb(126, 11, 11); */
+
+  --color-primary: #b12727; /* A darker red */
+  --color-primary-light: #ff6659; /* A softer, light red */
+  --color-primary-dark: #7a080e; /* A darker red */
+  --color-primary-darker: #570408; /* An even darker red */
 
   --color-light: rgb(255, 246, 246);
 

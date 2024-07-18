@@ -22,7 +22,7 @@ import NavLink from "./NavLink.vue";
 
 <style scoped>
 header {
-  padding-block: 0.7rem;
+  padding-block: 0.9rem;
   background: var(--color-primary);
 }
 
